@@ -11,16 +11,16 @@ Starting a new project:
 - Creates a hidden directory `.Rproj.user` that stores project-specific temporary files. 
 - Loads the project in RStudio. 
 
-[!IMPORTANT]
-The `<PROJECT>.Rproj` file can be used as a shortcut to open the project directly from your filesystem. 
+>[!IMPORTANT]
+>The `<PROJECT>.Rproj` file can be used as a shortcut to open the project directly from your filesystem. 
 
 Opening a project in RStudio (among other things):
 - Starts a new R session. 
 - Sets the project directory as the current working directory.
 - Previously open source documents are restored in editor tabs.
 
-[!NOTE]
-You can work on multiple projects at once - each project runs in its own instance of RStudio.
+>[!NOTE]
+>You can work on multiple projects at once - each project runs in its own instance of RStudio.
 
 
 ## Organizing your RStudio Project
