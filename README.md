@@ -25,6 +25,7 @@ You can work on multiple projects at once - each project runs in its own instanc
 
 ## Organizing your RStudio Project
 
+```
 Project_directory
 ├ /data
 ├ /results
@@ -33,6 +34,7 @@ Project_directory
 ├ helper_functions.R
 ├ analysis_script.R
 ├ project.Rproj
+```
 
 - Only `/data` and R scripts are required - everything else can be recreated (incl. earlier versions). 
 - `/data` should be treated as read-only. 
