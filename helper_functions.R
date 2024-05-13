@@ -1,7 +1,5 @@
 # Common helper functions
 # by Matthew Galbraith
-mem_used <- function() lobstr::mem_used() %>% as.numeric() %>% R.utils::hsize()
-obj_size <- function(x) object.size(x) %>% print(units = "auto")
 
 ## Setting and modifying default theme for plots
 theme_set(theme_gray(base_size=12, base_family="Arial") +
