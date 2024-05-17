@@ -46,6 +46,8 @@
 
 
 # 0 General Setup -----
+# Initialize and install packages with renv
+# renv::init()
 ## 0.1 Load required libraries ----
 library("tidyverse")
 library("readxl") # read .xlsx files
@@ -58,7 +60,7 @@ library("janitor") # data cleaning etc
 # library("tidyHeatmap") # tidy interface to ComplexHeatmap
 # library("plotly") # generating interactive plots
 # library("tictoc") # timer
-library("conflicted") # manage package function conflicts
+library("conflicted") # force all conflicts to become errors
 conflict_prefer("filter", "dplyr")
 conflict_prefer("select", "dplyr")
 conflict_prefer("count", "dplyr")
