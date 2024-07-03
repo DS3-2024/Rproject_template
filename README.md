@@ -44,4 +44,14 @@ Project_directory
 - Use a standardized workflow where possible in a main `<analysis_vN.N>.R` script. 
 - Keep your main workflow clean by moving functions, common settings etc to `helper_functions.R` script. 
 
+## Cloning this Project template
 
+Create a new Project by cloning this repository from Github: 
+
+      - Open RStudio and go to File > New Project... > Version Control > Git.  
+      - Enter the repository URL.  
+      - You may want to modify Project directory name and/or location.  
+      - Click on Create Project.  
+      - You may need to enter Github Username and PAT (or run `usethis::create_github_token()`).  
+      - Once project opens in RStudio, in R console run `renv::init()` to initialize project and install required packages  
+      (renv should already be installed: `install.packages("renv")`).  
