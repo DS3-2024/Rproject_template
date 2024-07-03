@@ -48,10 +48,9 @@ Project_directory
 
 Create a new Project by cloning this repository from Github: 
 
-      - Open RStudio and go to File > New Project... > Version Control > Git.  
-      - Enter the repository URL.  
-      - You may want to modify Project directory name and/or location.  
-      - Click on Create Project.  
-      - You may need to enter Github Username and PAT (or run `usethis::create_github_token()`).  
-      - Once project opens in RStudio, in R console run `renv::init()` to initialize project and install required packages  
-      (renv should already be installed: `install.packages("renv")`).  
+   - Open RStudio and go to File > New Project... > Version Control > Git.  
+   - Enter the repository URL.  
+   - You may want to modify Project directory name and/or location.  
+   - Click on Create Project.  
+   - You may need to enter Github Username and PAT (or run `usethis::create_github_token()`).  
+ 
