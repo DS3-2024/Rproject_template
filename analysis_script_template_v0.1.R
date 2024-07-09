@@ -48,6 +48,19 @@
 # 0 General Setup -----
 # Initialize and install packages with renv
 # renv::init()
+# see vignette("renv")
+# The general workflow when working with renv is:
+#  1 Call renv::init() to initialize a new project-local environment with a private R library,
+#  2 Work in the project as normal, installing and removing new R packages as they are needed in the project,
+#    recommend using renv::install() as this will automatically update lockfile
+#  3 Call renv::snapshot() to save the state of the project library to the lockfile (called renv.lock),
+#  4 Continue working on your project, installing and updating R packages as needed.
+#  5 Call renv::snapshot() again to save the state of your project library if
+# your attempts to update R packages were successful, or call renv::restore() to
+# revert to the previous state as encoded in the lockfile if your attempts to
+# update packages introduced some new problems.
+# 
+
 ## 0.1 Load required libraries ----
 library("tidyverse")
 library("readxl") # read .xlsx files
@@ -69,22 +82,8 @@ library("here") # generate path to current project directory
 source(here("helper_functions.R")) # load helper functions
 #
 
-## 0.2 renv setup ----
-# see vignette("renv")
-# The general workflow when working with renv is:
-#  1 Call renv::init() to initialize a new project-local environment with a private R library,
-#  2 Work in the project as normal, installing and removing new R packages as they are needed in the project,
-#    recommend using renv::install() as this will automatically update lockfile
-#  3 Call renv::snapshot() to save the state of the project library to the lockfile (called renv.lock),
-#  4 Continue working on your project, installing and updating R packages as needed.
-#  5 Call renv::snapshot() again to save the state of your project library if
-# your attempts to update R packages were successful, or call renv::restore() to
-# revert to the previous state as encoded in the lockfile if your attempts to
-# update packages introduced some new problems.
-#
 
-
-## 0.3 Set required parameters ----
+## 0.2 Set required parameters ----
 # Input data files
 meta_data_file <- here("data", "meta_data_file.txt") # comments/notes on this file?
 data_type1_file <- here("data", "data_type1_file.txt") # comments/notes on this file?
